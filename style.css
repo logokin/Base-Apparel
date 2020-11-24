@@ -1,0 +1,231 @@
+body {
+  padding-left: 6rem;
+  margin: 0;
+  background: url(images/bg-pattern-desktop.svg);
+}
+
+.box-one {
+  padding-top: 3rem;
+}
+.box-one img {
+  width: 8rem;
+}
+
+/* banner */
+
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex-one {
+  flex-basis: 40%;
+  margin-top: -1.3rem;
+}
+.color {
+  color: hsl(0, 36%, 70%);
+}
+.flex-one h2 {
+  color: hsl(0, 6%, 24%);
+  font-size: 2.9rem;
+  width: 55%;
+  line-height: 2.1rem;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  padding-top: 3rem;
+}
+
+.flex-one p {
+  color: hsl(0, 36%, 70%);
+  font-style: italic;
+  margin-bottom: 0.7rem;
+  font-size: 16px;
+  line-height: 1.6rem;
+}
+
+.input {
+  border-radius: 50%;
+  position: relative;
+  margin-top: 2rem;
+  flex-basis: 70%;
+}
+
+input {
+  width: 80%;
+  position: relative;
+  height: 100%;
+  border: 1px solid hsl(0, 74%, 74%);
+  padding: 0.5rem 0rem;
+  outline: none;
+  border-radius: 50px;
+}
+
+::-webkit-input-placeholder {
+  color: hsl(0, 36%, 70%);
+  padding-left: 12px;
+}
+input #warn {
+  color: hsl(0, 93%, 68%);
+  text-indent: 1px;
+  font-size: 0.5rem;
+}
+input[type="email"] {
+  padding-left: 15px;
+}
+/* #warn{
+    font-size: 4px;
+} */
+
+.img {
+  position: relative;
+  top: -5rem;
+  width: 16px;
+  left: 17rem;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  z-index: -1000;
+}
+.img-show {
+  opacity: 1;
+}
+button {
+  position: absolute;
+  top: 0px;
+  right: 3rem;
+  width: 59px;
+  padding: 0.2rem 0rem;
+  background: hsl(0, 93%, 68%);
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 1000;
+}
+
+button:hover {
+  box-shadow: 0px 0px 13px grey, -0px -0px 0px gray;
+  background: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+button .icon {
+  margin-top: 3px;
+  width: 7px;
+  padding: 4px 8px;
+}
+
+.flex-two {
+  flex-basis: 40%;
+  background-image: url(./images/hero-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin-top: -4.9rem;
+}
+
+@media (max-width: 930px) {
+  .flex-one {
+    margin-top: 0rem;
+    flex-basis: 60%;
+  }
+  .flex-one h2 {
+    padding-top: 0;
+  }
+  .flex-one p {
+    font-size: 13px;
+  }
+  .flex-two {
+    flex-basis: 36%;
+  }
+  .flex-two img {
+    margin: 0;
+  }
+  #warn {
+    position: relative !important;
+    top: 0;
+    left: 0;
+  }
+  button {
+    position: relative !important;
+    left: 0;
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    padding-left: 0;
+  }
+  .box-one img {
+    width: 6rem;
+    padding-left: 2.3rem;
+    margin-bottom: 2.7rem;
+  }
+  .flex-box {
+    flex-direction: column;
+  }
+  .flex-one h2 {
+    width: 50%;
+    text-align: center;
+    margin: 3.6rem auto;
+    margin-bottom: 2rem;
+  }
+  .flex-one p {
+    font-style: normal;
+    font-size: 0.9rem;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    /* padding: 0rem 1rem; */
+  }
+  .flex-one {
+    order: 2;
+  }
+  .flex-two {
+    order: 1;
+    background-image: url(./images/hero-mobile.jpg);
+    min-height: 68vh;
+    margin-top: 0;
+  }
+  .input {
+    width: 86%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .img {
+    position: absolute;
+    top: 0.5rem;
+    left: 14rem;
+  }
+  button {
+    position: absolute;
+    top: -2rem;
+    left: 15rem;
+    width: 46px;
+    outline: none;
+  }
+}
+
+@media (max-width: 322px) {
+  .flex-one h2 {
+    width: 100%;
+  }
+  .flex-one p {
+    width: 68%;
+    /* width: 73%; */
+  }
+  .flex-two {
+    min-height: 72vh;
+  }
+  button {
+    left: 12rem;
+    top: -2rem;
+  }
+  .img {
+    left: 11.6rem;
+  }
+  #warn {
+    text-align: left;
+    font-size: 10px;
+    padding-left: -10px;
+  }
+}

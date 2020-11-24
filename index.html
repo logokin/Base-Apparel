@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+      
+  </head>
+  <body>
+    <section>
+      <div class="box-one">
+        <img src="./images/logo.svg" alt="" class="image" />
+      </div>
+      <div class="flex-box">
+        <!-- flex one -->
+        <div class="flex-one">
+          <h2 class="coming"><span class="color">We're</span> coming soon</h2>
+          <p class="para">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form action="#" onclick="return validateEmail()">
+          
+
+            <div class="input">
+              <input
+                type="text"
+                id="email"
+                placeholder="Email Address"
+              />
+              <p id="warn"></p>
+
+              <img src="./images/icon-error.svg" alt="" class="img" />
+            
+            
+           
+              <button type="button" >
+                <img src="./images/icon-arrow.svg" alt="" class="icon" id="press" />
+              </button>
+            </div>
+    
+          </form>
+          
+        </div>
+
+        <!-- flex two -->
+         <div class="flex-two">
+          
+         </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
